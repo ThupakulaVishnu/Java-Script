@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 2px solid black;
+            margin: 50px 250px;
+            padding:30px 30px;
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function chngcont(){
+            var h2cont=document.getElementById("title");
+            var cngcont=document.getElementById("content");
+            h2cont.innerText="Changed h2 DOM Manipulated using JavaScript !!!"
+            cngcont.innerText=" <------ This is changed content ------->  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aliquid quaerat dolore recusandae beatae? Aperiam labore eos quas molestias ducimus incidunt consectetur non, repellendus molestiae dolore adipisci liber ea reprehenderit quos impedit vero dolorem natus doloribus fugiat voluptatum expedita nobis minima soluta! Distinctio accusamus reprehenderit impedit dolores doloribus quidem rem illo ipsa. Excepturi facere illum eum, sit magni vero repellendus et aperiam ipsum soluta non provident rerum velit illo dolores voluptatum in atque. Vel placeat repellendus quis deleniti dignissimos voluptatibus voluptatum odit iste sequi non ipsa aperiam, excepturi doloremque iure tempora. Temporibus quos aperiam magni facere. Commodi molestias nulla dignissimos"
+        }
+    </script>
+</head>
+
+<body>
+    <h2 id="title">DOM Concept</h2>
+    <p id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aliquid quaerat dolore recusandae beatae?
+        Aperiam labore eos quas molestias ducimus incidunt consectetur non, repellendus molestiae dolore adipisci libero
+        ea reprehenderit quos impedit vero dolorem natus doloribus fugiat voluptatum expedita nobis minima soluta!
+        Distinctio accusamus reprehenderit impedit dolores doloribus quidem rem illo ipsa. Excepturi facere illum eum,
+        sit magni vero repellendus et aperiam ipsum soluta non provident rerum velit illo dolores voluptatum in atque.
+        Vel placeat repellendus quis deleniti dignissimos voluptatibus voluptatum odit iste sequi non ipsa aperiam,
+        excepturi doloremque iure tempora. Temporibus quos aperiam magni facere. Commodi molestias nulla dignissimos
+        soluta saepe quae. In neque laborum eius nisi, nobis adipisci ducimus soluta mollitia quos quisquam culpa
+        assumenda provident officiis omnis illo sapiente ex modi eveniet a quis? Vitae inventore facere non velit dicta
+        incidunt a. Perferendis ipsam temporibus velit, saepe cumque voluptates, accusantium fugiat ratione
+        exercitationem perspiciatis eligendi rem explicabo similique quaerat nostrum voluptatem atque molestias quasi
+        at, sequi asperiores sunt maxime. Voluptatum autem assumenda nulla incidunt exercitationem aperiam deserunt
+        pariatur veniam quas quisquam dolor sequi illo nihil non voluptatibus est, sunt perferendis ipsum eligendi quis?
+        Voluptatibus, neque voluptatem, illum, saepe in similique ab iste architecto repudiandae facilis dicta labore!
+    </p>
+    <button onclick="chngcont()">Change h2 content</button>
+</body>
+
+</html>
