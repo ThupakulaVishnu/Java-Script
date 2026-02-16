@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+}
+#title{
+    width:100vw;
+    height:80px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#bdy{
+    margin:30px 40px ;
+}
+#bdy h2,#bdy p,#bdy button{
+    margin:10px 0px ;
+}
