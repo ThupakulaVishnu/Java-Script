@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changepara(){
+            var para=document.getElementsByClassName("p1");
+
+            para[1].style.backgroundColor="black";
+            para[1].style.color="White";
+            para[1].style.padding="20px";
+
+            var para1=document.getElementsByName("p2");
+            para1[0].style.color="red";
+
+            para1[2].innerHTML=" <b><i> This is the Para accessed by Name <i><b>";
+            para1[2].style.color="blue";
+            console.log(para);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim vel, impedit voluptatum laudantium non,
+            necessitatibus quasi qui voluptate perferendis ea id eaque autem explicabo, nemo doloribus delectus porro
+            quia voluptatibus corrupti quibusdam esse. Possimus neque, obcaecati vero optio quaerat est odit cupiditate
+            recusandae sequi error rerum ad dolores impedit vitae?
+        </p>
+        <p name="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim vel, impedit voluptatum laudantium non,
+            necessitatibus quasi qui voluptate perferendis ea id eaque autem explicabo, nemo doloribus delectus porro
+            quia voluptatibus corrupti quibusdam esse. Possimus neque, obcaecati vero optio quaerat est odit cupiditate
+            recusandae sequi error rerum ad dolores impedit vitae?
+        </p>
+        <p class="p1" name="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim vel, impedit voluptatum laudantium non,
+            necessitatibus quasi qui voluptate perferendis ea id eaque autem explicabo, nemo doloribus delectus porro
+            quia voluptatibus corrupti quibusdam esse. Possimus neque, obcaecati vero optio quaerat est odit cupiditate
+            recusandae sequi error rerum ad dolores impedit vitae?
+        </p>
+        <p name="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim vel, impedit voluptatum laudantium non,
+            necessitatibus quasi qui voluptate perferendis ea id eaque autem explicabo, nemo doloribus delectus porro
+            quia voluptatibus corrupti quibusdam esse. Possimus neque, obcaecati vero optio quaerat est odit cupiditate
+            recusandae sequi error rerum ad dolores impedit vitae?
+        </p>
+        <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim vel, impedit voluptatum laudantium non,
+            necessitatibus quasi qui voluptate perferendis ea id eaque autem explicabo, nemo doloribus delectus porro
+            quia voluptatibus corrupti quibusdam esse. Possimus neque, obcaecati vero optio quaerat est odit cupiditate
+            recusandae sequi error rerum ad dolores impedit vitae?
+        </p>
+        <button onclick="changepara()">Select Para</button>
+    </div>
+</body>
+
+</html>

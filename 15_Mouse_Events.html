@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 90px auto;
+        }
+
+        .input-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+    <script>
+        function f1(){
+            var butn=document.getElementById("but");
+            butn.innerText="Mouse Entered";
+        }
+        function f2(){
+            var butn=document.getElementById("but");
+            butn.textContent="Mouse Leave";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Events in Java Script</h1>
+        <div class="input-box">
+            <input placeholder="Enter" />
+            <button id="but" onmouseenter="f1()" onmouseleave="f2()">
+                Press
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
